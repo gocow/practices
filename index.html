@@ -8,5 +8,26 @@
 	<body>
 		<p>Hello World</p>
 		<p><strong>Hello</strong> <span>World</span> <em>People</em>
+		
+		<p><strong>Absolute links</strong> are links to a full URL, which can be anywhere on the internet.<br>
+		They require the http:// or https:// at the beginning.<br>
+		This <a href="http://www.google.com">link</a> will take you to google.</p>
+		
+		<p><strong>Relative links</strong> point to local content in your project directory. You only need to specify the file name and, if present, the folder structure.<br>
+		If you click on <a href="folder1/index skeleton.html">index skeleton</a>, you will open the one inside folder1 of the website.</p>
+		
+		<p><strong>Anchor links</strong> scroll the current page to the location of specific content. The href attribute points to an id present somewhere on the page <br>
+		(indicated with a hashtag). No scrolling will happen if the browser window is too tall to allow it.<br>
+		Click on <a href="#anchor">Bread anchor</a></p>
+		
+		<p><strong>Email links,</strong> also known as <strong>mailto links</strong> open a new email draft, addressed to the specified recipient, in the default email app. <br>
+		The syntax of the href attribute value is mailto: followed by the recipient <a href="mailto:rainbow@rain.com">email address</a> with no spaces anywhere in the href.</p>
+		
+		<p>
+		<strong>The title attribute</strong> contains alternate text describing the link. Hover on <a href="somewhere.html" title="somewhere over the rainbow">Rainbow</a> is in the sky
+		</p>
+		
+		<p>The target attribute. It forces a link to open in a <a href="http://www.google.com" target="_blank">new tab</a>. The only useful value for target is _blank.</p>
+		<h2 id="anchor">Bread anchor</h2>
 	</body>
 </html>
