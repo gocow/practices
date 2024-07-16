@@ -18,7 +18,7 @@
 		If you click on <a href="folder1/index skeleton.html">index skeleton</a>, you will open the one inside folder1 of the website.</p>
 		
 		<p><strong>Anchor links</strong> scroll the current page to the location of specific content. <br>
-		The <strong><a title="hyperlink reference">href</a></strong> attribute points to an id present somewhere on the page <br>
+		The <strong><a title="hyperlink reference">href</a></strong> attribute points to an <strong>id</strong> present somewhere on the page <br>
 		(indicated with a hashtag). No scrolling will happen if the browser window is too tall to allow it.<br>
 		Click on <a href="#anchor">Bread anchor</a></p>
 		
@@ -64,6 +64,7 @@
 			<br>
 			<label>Submit</label><br>
 			<input type="submit"> <br>
+		</form>
 			
 		<p>The <strong>Textarea Element</strong> creates a large multi-line text field. It requires opening and closing tag, 
 		and any text between the two tags will auto-fill the field.
@@ -77,16 +78,93 @@
 		
 		<p>The <strong>select element</strong> creates a drop-down field and the <strong>option element</strong>. <br>
 		When nested inside a <strong>select</strong>, provides the selection options. Both elements require opening and closing tags. </p>
-		<p><label>Select</label>
+		<p><label>Select</label><br>
 		<select>
 			<option>Option 1</option>
 			<option>Option 2</option>
 			<option>Option 3</option>
 		</select></p>
 		
+		<p> The <strong>Value Attribute</strong> shows the user something different for an option than the data that gets recorded when the form is submitted<br>
+		<label>Select your state</label><br>
+			<select>
+				<option value="NH">New Hampshire</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+			</select>
+		</p>
+		
+		<p>To show a grayed-out first option in <strong>select</strong> like "Choose one", you can use the attributes <br>
+		<strong>disabled</strong> to prevent it from being selected, the <strong>hidden</strong> to prevent it from showing in the dropdown, <br>
+		and the <strong>selected</strong> to make sure it shows by default.
+		</p>
+		<p>
+		<label>Select One</label><br>
+		<select>
+			<option disabled hidden selected>Choose one</option>
+			<option>Option 1</option>
+			<option>Option 2</option>
+		</select>
+		</p>
+		
+		<p>The <strong>Name Attribute</strong> identifies the data of each field in a <strong>form</strong>.<br>
+		To provide this information, it is important to include a <strong>name attribute</strong> that identifies the data of each field in a form.</p>
+		<p>
+		<input type="text" name="message-subject">
+		</p>
+		<p>The <strong>name attribute</strong> is similar to the <strong>label element</strong> discussed next in that it identifies the different form fields. <br>
+		But while the <strong>label element</strong> identifies a field for human users, 
+		the <strong>name attribute</strong> identifies the field for the computer that processes the submitted form.</p>
+		
+		<p>The <strong>Label Element</strong> is used ot identify each field, and should include the <strong>for attribute</strong> which should match the <strong>id</strong> <br>
+		applied to its form field. This lets the browser know which label is for which field.</p>
+		<p>
+		<label for="user-name">Your Name</label><br>
+		<input type="text" id="user-name" name="user-name">
+		</p>
+		
+		<p>Submit buttons<br>
+		The <strong>input element</strong> can be used by specifying the corresponding type attribute. <br>
+		In this case, type="submit". By default, the button text reads "submit", but that text can be changed using the value attribute.
+		</p>
+		<p>
+		<input type="submit" value="Click here"></p>
+		
+		<p>
+		The <strong>button element</strong> can be used to submit a form, but can also be used to trigger javascript actions. <br>
+		To use it for a form, use type="submit" as an attribute. One of the main differences between the button element and input is that <br>
+		button needs a separate closing tag. Whatever text is placed between the opening and closing tags is the text that is shown on the button.
+		</p>
+		<p>
+		<button type="submit">Button Text</button>
+		</p>
+		<p>You can also use the <strong>Input Element</strong> for a button.</p>
+		<p> <input type="submit"></p>
+		
+		<p>
+		The <strong>required attribute</strong> can be added to any form field. <br>
+		If that field is left empty when the user attempts to submit, the browser will show an error saying the field must be filled.
+		</p>
+		<p>
+		<input type="text" required>
+		</p>
+		<p>
+		The <strong>disabled attribute</strong> can be added to any form field. <br>
+		It effectively "turns off" the functionality of that field and does not allow the user to interact with it.
+		</p>
+		<p>
+		<input type="text" disabled>
+		</p>
+		<p>
+		The <strong>placeholder attribute</strong> accepts text or another appropriate value to show as a "placeholder" to indicate where and how the user should add input.<br>
+		(gives an example in the field)
+		</p>
+		<p>
+		<input type="text" placeholder="Some Placeholder Text">
+		</p>
 		
 		
-		</form>
+		
 		
 		
 			
