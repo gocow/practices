@@ -139,7 +139,7 @@
 		<button type="submit">Button Text</button>
 		</p>
 		<p>You can also use the <strong>Input Element</strong> for a button.</p>
-		<p> <input type="submit"></p>
+		<p> <input type="submit" value"Button Name"></p>
 		
 		<p>
 		The <strong>required attribute</strong> can be added to any form field. <br>
@@ -162,9 +162,51 @@
 		<p>
 		<input type="text" placeholder="Some Placeholder Text">
 		</p>
-		
-		
-		
+		<p>
+		<strong>Details and Summary Elements</strong> can be used to show a snippet introductory or summary content that can be expanded/toggled.</p>
+		<p>
+		<details>
+			<summary>How much wood could a woodchuck chuck?</summary>
+			<p>A woodchuck would chuck as much wood as a woodchuck could chuck</p>
+		</details>
+		<details>
+			<summary>Frutos de la region tropical</summary>
+			<ul>
+				<li>chirimoya
+				<li>sandia
+				<li>papaya
+				<li>La vida es un carnaval</li>
+			</ul>
+		</details>
+		</p>
+		<p>
+		The new <strong>dialog element</strong> is for pop-up content in what would traditionally be referred to <br>
+		as a modal or lightbox. when open, it overlays the normal page content.<br>
+		The dialog element is hidden by default, but can be set to display using the open attribute like so: -dialog open-.</p>
+		<p>
+		<button id="open-dialog" type="button">Open Dialog</button>
+
+<dialog id="dialog-demo">
+	Dialog content!
+</dialog>
+
+<!-- This should come just before the closing body tag -->
+<script> 
+	const modal = document.getElementById("dialog-demo");
+	const open = document.getElementById("open-dialog");
+
+	open.addEventListener("click", () => {
+		modal.showModal();
+	});
+
+	modal.addEventListener("click", event => {
+		if (event.target === modal) {
+		modal.close("cancelled");
+		}
+	});
+</script>
+</p>
+
 		
 		
 			
